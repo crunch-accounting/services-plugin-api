@@ -9,10 +9,10 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 public @interface PlatformComponent {
 
-    String name();  // FIXME Must be normalised
-    String ipProtocol() default "ip";
-    String groupIdRef() default "";
+    String name();
+    String ipProtocol() default "tcp";
+    // String groupIdRef() default "";
     int fromPort();
     int toPort();
-    Direction direction() default Direction.INGRESS;
+    // Direction direction() default Direction.INGRESS;
 }
