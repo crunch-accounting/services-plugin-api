@@ -1,4 +1,4 @@
-package uk.co.crunch.aws.cloudformation;
+package uk.co.crunch.platform.api;
 
 public enum Direction {
     INGRESS, EGRESS
