@@ -19,5 +19,5 @@ Add the following to your POM:
     <dependency>
         <groupId>uk.co.crunch</groupId>
         <artifactId>crunch-services-plugin-api</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </dependency>
