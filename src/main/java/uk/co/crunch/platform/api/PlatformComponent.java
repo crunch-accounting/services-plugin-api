@@ -14,4 +14,5 @@ public @interface PlatformComponent {
     int fromPort();
     int toPort();
     Direction direction() default Direction.INGRESS;
+    UseTarget target() default UseTarget.USE_THEM;
 }
