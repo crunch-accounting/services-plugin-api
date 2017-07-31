@@ -13,6 +13,7 @@ public @interface PlatformComponent {
     String ipProtocol() default "tcp";
     int fromPort();
     int toPort();
+    String defaultParameterValue() default "";
     Direction direction() default Direction.INGRESS;
     UseTarget target() default UseTarget.USE_THEM;
 }
