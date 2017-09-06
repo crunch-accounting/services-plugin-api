@@ -16,4 +16,5 @@ public @interface PlatformComponent {
     String defaultParameterValue() default "";
     Direction direction() default Direction.INGRESS;
     UseTarget target() default UseTarget.USE_THEM;
+    StackDependency stack() default StackDependency.OUTSIDE_STACK;
 }
