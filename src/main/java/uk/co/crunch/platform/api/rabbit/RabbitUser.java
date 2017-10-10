@@ -18,7 +18,7 @@ public @interface RabbitUser {
 
     @interface Instance {
         String host() default "rabbitmq.service.consul";
-        int port() default 15672;
+        int port() default 5672;
         String customConfigName() default "";
     }
 }
