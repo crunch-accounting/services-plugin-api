@@ -13,7 +13,7 @@ public class VaultDatabaseCommands {
     }
 
     public static String getDbConnectionUrl(final MySqlDataSource ds) {
-        return "root:mysql@tcp(" + ds.instance().host() + ":" + ds.instance().port() + ")/";
+        return "@tcp(" + ds.instance().host() + ":" + ds.instance().port() + ")/";
     }
 
     public static String getUserCreationStatement(final MySqlDataSource ds) {
