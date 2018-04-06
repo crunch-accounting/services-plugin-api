@@ -4,11 +4,11 @@ A set of classes and annotations to allow platform dependencies to be specified 
 
 ## Contrived example:
 
-    @PlatformComponents({
-        @PlatformComponent(name="FeatureService", fromPort=8080, toPort=8080),
-        @PlatformComponent(name="RabbitMq", fromPort=5672, toPort=5672),
-        @PlatformComponent(name="Rds", fromPort=3006, toPort=3006)
-    })
+    @PlatformComponent(name="FeatureService", fromPort=8080, toPort=8080),
+    @PlatformComponent(name="RabbitMq", fromPort=5672, toPort=5672),
+    @PlatformComponent(name="Rds", fromPort=3006, toPort=3006)
+    public class MyComponentImpl {
+    }
 
 ----
 
