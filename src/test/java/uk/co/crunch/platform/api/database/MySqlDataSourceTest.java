@@ -9,7 +9,7 @@ import static uk.co.crunch.platform.api.database.VaultDatabaseCommands.*;
 public class MySqlDataSourceTest {
 
     @Test
-    @MySqlDataSource(schema="insurancedb", instance=@Instance(host="rds-wordpress.x.y", customConfigName="wordpress"), grants="ALL")
+    @MySqlDataSource(schema="insurancedb", instance=@Instance(host="rds-wordpress.x.y", customConfigName="wordpress"))
     public void testLongForm() throws NoSuchMethodException {
         final MySqlDataSource ann = this.getClass().getMethod("testLongForm").getAnnotation(MySqlDataSource.class);
         assertThat(ann.schema()).isEqualTo("insurancedb");
