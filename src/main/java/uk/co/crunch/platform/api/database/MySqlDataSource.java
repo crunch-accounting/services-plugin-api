@@ -11,12 +11,5 @@ public @interface MySqlDataSource {
 
     String schema();
     String customConfigName() default "";
-    Instance instance() default @Instance;
-    String grants() default "ALL";
-
-    @interface Instance {
-        String host() default "rds.service.consul";
-        int port() default 3306;
-        String customConfigName() default "";
-    }
+    String grants() default "SELECT,INSERT,UPDATE,DELETE";
 }

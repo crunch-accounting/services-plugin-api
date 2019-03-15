@@ -16,15 +16,8 @@ import java.lang.annotation.Target;
 public @interface RabbitUser {
 
     String customRoleName() default "";
-    Instance instance() default @Instance;
 
     String readPrivs() default ".*";
     String writePrivs() default ".*";
     String configPrivs() default ".*";
-
-    @interface Instance {
-        String host() default "rabbitmq.service.consul";
-        int port() default 15672;
-        String customConfigName() default "";
-    }
 }
