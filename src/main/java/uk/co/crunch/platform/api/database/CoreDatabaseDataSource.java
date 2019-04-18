@@ -12,6 +12,5 @@ public @interface CoreDatabaseDataSource {
     // Grants default to read-only, but we surely have to be able to support the same range as we do for Platform DB
     // Schema name is not configurable either - it's fixed but environment-specific and set by Config
 
-    String[] tables();
     String grants() default "SELECT";
 }
