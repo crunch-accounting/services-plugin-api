@@ -13,4 +13,6 @@ public @interface CoreDatabaseDataSource {
     // Schema name is not configurable either - it's fixed but environment-specific and set by Config
 
     String grants() default "SELECT";
+
+    boolean dualDataSources() default false;  // Allow both Core and Platform DataSources to co-exist
 }
