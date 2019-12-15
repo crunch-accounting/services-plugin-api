@@ -16,7 +16,7 @@ public class RabbitApiTest {
         assertThat(ann.configPrivs()).isEqualTo(".*");
     }
 
-    @RabbitUser(customRoleName="special", readPrivs="consumer\\.lead\\.producer\\.lead\\.create", writePrivs="default|email.*")
+    @RabbitUser(customRoleName = "special", readPrivs = "consumer\\.lead\\.producer\\.lead\\.create", writePrivs = "default|email.*")
     @Test
     public void testRabbitUserLong() throws NoSuchMethodException {
         final RabbitUser ann = this.getClass().getMethod("testRabbitUserLong").getAnnotation(RabbitUser.class);

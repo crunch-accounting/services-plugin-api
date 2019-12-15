@@ -10,6 +10,8 @@ import java.lang.annotation.Target;
 public @interface MySqlDataSource {
 
     String schema();
+
     String customConfigName() default "";
+
     String grants() default "SELECT,INSERT,UPDATE,DELETE";
 }

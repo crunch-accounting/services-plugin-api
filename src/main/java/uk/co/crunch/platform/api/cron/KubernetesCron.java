@@ -10,6 +10,7 @@ import java.lang.annotation.Target;
 public @interface KubernetesCron {
 
     String name();
+
     String schedule();
 
     // https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/#concurrency-policy

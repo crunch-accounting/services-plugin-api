@@ -8,6 +8,7 @@ import java.lang.annotation.Target;
 
 /**
  * Tells the plugin to generate certain bootstrap entries for config-service.
+ *
  * @apiNote All of that is turned off in test mode.
  */
 @Documented
@@ -18,6 +19,8 @@ public @interface RabbitUser {
     String customRoleName() default "";
 
     String readPrivs() default ".*";
+
     String writePrivs() default ".*";
+
     String configPrivs() default ".*";
 }
