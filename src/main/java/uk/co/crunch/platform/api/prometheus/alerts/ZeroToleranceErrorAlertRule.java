@@ -10,6 +10,7 @@ import java.lang.annotation.Target;
 public @interface ZeroToleranceErrorAlertRule {
     String name();
     String errorLabel();
+    String timeRange() default "1m";
     String duration() default "1m";
     AlertSeverity severity() default AlertSeverity.WARNING;
     String team();

@@ -19,5 +19,7 @@ public class ZeroToleranceErrorAlertRuleUnitTest {
         assertThat(ann.severity()).isEqualTo(PAGER);
         assertThat(ann.team()).isEqualTo(TEAM);
         assertThat(ann.description()).isEqualTo("desc");
+        assertThat(ann.duration()).isEqualTo("1m");
+        assertThat(ann.timeRange()).isEqualTo("1m");
     }
 }
