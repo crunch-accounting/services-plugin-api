@@ -30,7 +30,7 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <!-- Deliberately old version to minimise risk of overlap with users -->
-            <version>2.6.0</version>
+            <version>2.9.10.1</version>
         </dependency>
 
         <dependency>
