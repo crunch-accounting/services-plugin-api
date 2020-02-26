@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 // Additional Spring profiles to be injected at bootstrap time, presumably to add grouping of services into stacks/clusters with shared config
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.TYPE, ElementType.METHOD})
+@Target(ElementType.TYPE)
 public @interface CloudConfigProfiles {
     String[] value();
 }
